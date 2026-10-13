@@ -1,0 +1,314 @@
+:root{
+    --amarelo-band: #FFC20F;
+    --verde-band: #008C45;
+    --branco: #FFF;
+    --preto: #000;
+    --cor-do-fundo: #000033;
+    --cor-text-secundario: #c7c7c795;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 20px 0px 20px;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)), url(img/estudio.webp);
+    background-position: center;
+    background-size: cover;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.logo{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.home, .blog{
+    color: var(--branco);
+}
+.nav-header, .nav-footer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav a:hover, .nav-footer a:hover{
+    color: var(--amarelo-band);
+    border-bottom: 5px solid var(--amarelo-band);
+}
+nav a, .nav-footer a{
+    border-bottom: 5px solid transparent;
+}
+.logo h1{
+    color: var(--branco);
+}
+header a{
+    text-decoration: none;
+    color: var(--branco);
+}
+.header-direita{
+    display: flex;
+    align-items: center;
+}
+.search{
+    color: var(--branco);
+    display: flex;
+    gap: 20px;
+}
+.search:hover{
+    color: var(--amarelo-band);
+    cursor: pointer;
+}
+.btn-cadastro{
+    background-color: var(--verde-band);
+    color: var(--branco);
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+}
+.btn-cadastro:hover{
+    cursor: pointer;
+    background-color: rgb(0, 65, 0);
+}
+
+.btn-login{
+    background: transparent;
+    border: 1px solid var(--branco);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--branco);
+}
+.btn-login:hover{
+    background-color: var(--amarelo-band);
+    color: var(--preto);
+}
+.p-home-start{
+    color: var(--amarelo-band);
+    font-size: 20px;
+}
+.h2-home-center{
+    color: var(--branco);
+    font-size: 40px;
+    line-height: 30px;
+}
+.p-home-end{
+    color: var(--branco);
+    font-size: 14px;
+}
+.btn-play{
+    color: var(--preto);
+    background-color: var(--amarelo-band);
+    padding: 10px;
+    border: 1px solid var(--preto);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.home a{
+    text-decoration: none;
+}
+.home{
+    padding: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    margin-top: 20vh;
+    gap: 10px;
+}
+
+.superior-noticias{
+    padding: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.superior-noticias h2{
+    border-left: 5px solid var(--amarelo-band);
+    padding: 5px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.cards img{
+    width: 291px;
+    height: 150px;
+    border-radius: 10px 10px 0 0; 
+    object-fit: cover;
+    object-position: center;
+}
+.ultimas-noticias{
+    padding: 15px;
+    height: 70vh;
+    color: var(--branco);
+    background-color: var(--cor-do-fundo);
+    width: 100%;
+}
+.cards .card{
+    border: 2px solid var(--branco);
+    border-radius: 10px 10px 0 0;
+    width: 295px;
+    height: 290px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+.card h2, h3, p{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.ultimas-noticias h2{
+    font-size: 20px;
+}
+.ultimas-noticias h3{
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--cor-text-secundario);
+}
+.ultimas-noticias p{
+    font-size: 12px;
+    color: var(--cor-text-secundario);
+    margin-bottom: 10px;
+}
+
+.superior-programas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.superior-programas h2{
+    border-left: 5px solid var(--amarelo-band);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cards img{
+    width: 291px;
+    height: 150px;
+    border-radius: 10px 10px 0 0; 
+    object-fit: cover;
+    object-position: center;
+}
+.programas{
+    padding: 15px;
+    height: 70vh;
+    color: var(--preto);
+    background-color: var(--branco);
+    width: 100%;
+}
+.cards .card-programas{
+    border: 2px solid var(--preto);
+    border-radius: 10px 10px 0 0;
+    width: 295px;
+    height: 250px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+.card-programas h2, h3, p{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.programas h2{
+    font-size: 20px;
+}
+.programas h3{
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--preto);
+}
+.programas p{
+    font-size: 12px;
+    color: var(--preto);
+    margin-bottom: 10px;
+}
+
+.jornal{
+    background-color: var(--cor-do-fundo);
+    padding: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h2-jornal-start{
+    color: var(--branco);
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.h2-jornal-start i{
+    font-size: 40px;
+}
+.p-jornal-center{
+    color: var(--branco);
+    font-weight: lighter;
+}
+.esquerda-jornal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.direita-jornal p{
+    color: var(--branco);
+}
+p-direita-jornal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tela{
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(to right, #050D15, #071119);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid var(--branco);
+    border-radius: 10px;
+}
+.logo-tela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-tela img{
+    width: 150px;
+    height: auto;
+}
+.logo-tela h2{
+    color: var(--branco);
+}
+.btn-aovivo{
+    background-color: red;
+    color: var(--branco);
+    padding: 10px;
+    border-radius: 10px;
+}
+.ao-vivo{
+    margin-bottom: 40px;
+    margin-left: 350px;
+}
+.blog{
+    background-color: var(--cor-do-fundo);
+    padding: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+
